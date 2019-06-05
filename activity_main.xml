@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <!-- FIRST LINEAR CHILD BEGIN -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:context=".MainActivity"
+        android:layout_marginTop="25dp">
+
+        <!-- TeamA Begins here -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Team A"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/team_a_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="56sp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+3 Points"
+                android:layout_margin="8dp"
+                android:onClick="addThreePointsTeamA"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+2 Points"
+                android:layout_margin="8dp"
+                android:onClick="addTwoPointsTeamA"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Free Throw"
+                android:layout_margin="8dp"
+                android:onClick="addOnePointTeamA"/>
+        </LinearLayout>
+
+        <!-- TeamA Ends here -->
+
+
+        <!-- TeamB Begins here -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Team B"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/team_b_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="56sp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+3 Points"
+                android:layout_margin="8dp"
+                android:onClick="addThreePointsTeamB"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+2 Points"
+                android:layout_margin="8dp"
+                android:onClick="addTwoPointsTeamB"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Free Throw"
+                android:layout_margin="8dp"
+                android:onClick="addOnePointTeamB"/>
+        </LinearLayout>
+
+        <!-- TeamB Ends here -->
+
+    </LinearLayout>
+
+    <!-- FIRST LINEAR CHILD END -->
+
+
+
+    <!-- SECOND LINEAR BEGIN -->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="reset"
+        android:text="RESET"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"/>
+
+    <!-- SECOND LINEAR end -->
+
+</RelativeLayout>
